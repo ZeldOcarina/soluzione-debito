@@ -1,0 +1,25 @@
+:root {
+  // COLORS
+  --color-primary: #0a4672;
+  --color-secondary: #ffc700;
+  --black: #000000;
+  --white: #ffffff;
+  --body-bg-color: #e5e5e5;
+  --cards-shadow: 3px 3px 22px -12px rgba(0, 0, 0, 0.42);
+}
+
+//FONT FAMILY
+$title-font: "Open Sans", serif;
+$body-font: "Open Sans", sans-serif;
+$body-secondary: "Open Sans", sans-serif;
+$bold: 700;
+
+// FONT-SIZES
+$basic-font-size: 1.7rem;
+$mobile-font-size: 1.5rem;
+
+$big-title: 4rem;
+$title-font-size: 3.5rem;
+$mobile-title-font-size: 3rem;
+
+$offset: -30rem;

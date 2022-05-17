@@ -1,0 +1,20 @@
+// IMPORT NORMALIZE.CSS
+@import "../../node_modules/normalize.css/normalize.css";
+
+@import "./abstracts/abstracts";
+@import "./vendors/bootstrap-override";
+
+// IMPORT BOOTSTRAP REQUIRED MODULES
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@import "./abstracts/mediaqueries";
+
+@import "./base/base";
+
+@import "./layout/navbar";
+
+@import "./sections/hero";
+@import "./sections/logos";
+@import "./sections/tagline";
+
+@import "./utils/utils";
