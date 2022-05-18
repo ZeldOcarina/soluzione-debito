@@ -1,135 +1,388 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- Google Fonts Link: https://fonts.google.com/share?selection.family=Open%20Sans:wght@300;400;600;700 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./scss/index.scss" />
-  </head>
-  <body>
-    <picture class="hero__image">
-      <source
-        srcset="./assets/hero.png?as=webp&width=1900"
-        media="(max-width: 1900px)"
-        type="image/webp"
-      />
-      <source
-        srcset="./assets/hero.png?as=webp&width=1800"
-        media="(max-width: 1800px)"
-        type="image/webp"
-      />
-      <source
-        srcset="./assets/hero.png?as=webp&width=800"
-        media="(max-width: 800px)"
-        type="image/webp"
-      />
-      <img src="./assets/hero.png?as=webp" width="400" type="image/webp" />
-    </picture>
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container">
-        <a class="navbar-brand"
-          ><img
-            class="navbar__logo"
-            src="./assets/rocket-color.png"
-            alt="Rocket Logo"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbar"
-          aria-controls="navbar"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbar">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Casi Studio</a>
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Document</title>
+   <!-- Google Fonts Link: https://fonts.google.com/share?selection.family=Open%20Sans:wght@300;400;600;700 -->
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
+   <link rel="stylesheet" href="./scss/index.scss" />
+</head>
+
+<body>
+   <header>
+      <picture class="hero__image">
+         <source srcset="./assets/hero.png?as=webp&width=1900" media="(max-width: 1900px)" type="image/webp" />
+         <source srcset="./assets/hero.png?as=webp&width=1800" media="(max-width: 1800px)" type="image/webp" />
+         <source srcset="./assets/hero.png?as=webp&width=800" media="(max-width: 800px)" type="image/webp" />
+         <img src="./assets/hero.png?as=webp" width="400" type="image/webp" />
+      </picture>
+      <nav class="navbar navbar-expand-lg navbar-light">
+         <div class="container">
+            <a class="navbar-brand"><img class="navbar__logo" src="./assets/rocket-color.png" alt="Rocket Logo" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+               aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">Casi Studio</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">Step</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">Vantaggi</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">Funzioni</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">Faq</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="btn btn-secondary" href="#">CONTATTACI</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </header>
+   <main>
+      <section class="hero">
+         <div class="container">
+            <div class="hero__top-content">
+               <div class="hero__top-text">
+                  <h1>I Professionisti del Debito</h1>
+                  <h2>
+                     assistiamo le aziende a risolvere le problematiche di debito
+                  </h2>
+                  <p class="hero__intro">
+                     Concentra la tua creatività sul tuo business, a gestire i problemi
+                     del debito ci pensiamo noi.
+                  </p>
+               </div>
+            </div>
+            <div class="hero__bottom-text">
+               <p>Risparmia tempo e denaro</p>
+               <a href="#" class="btn btn-secondary">PRENOTA LA TUA CONSULENZA</a>
+               <p>con uno dei nostri esperti</p>
+            </div>
+            <!-- <img src="./assets/hero.png?as=webp" alt=""> -->
+         </div>
+      </section>
+      <section class="logos container">
+         <div class="logos__container">
+            <img src="./assets/logos/economy-logo.svg" alt="Logo Economy" /><img
+               src="./assets/logos/milano-finanza-logo.svg" alt="Logo Milano Finanza" />
+            <img src="./assets/logos/sole-24-logo.svg" alt="Logo Il Sole 24 Ore" /><img
+               src="./assets/logos/forbes-logo.svg" alt="Logo Forbes" />
+         </div>
+      </section>
+      <section class="tagline container">
+         <h2>
+            Oltre 2.000 aziende hanno superato la crisi finanziaria grazie ad una
+            tempestiva ristrutturazione del debito.
+         </h2>
+      </section>
+      <section class="testimonials container">
+         <h2>Casi Studio</h2>
+         <div class="testimonials__container">
+            <article class="testimonials__case-study-card">
+               <h3>Il nostro cliente aveva 5 milioni di debiti con le banche.</h3>
+               <p>
+                  I Professionisti del Debito sono riusciti ad ottenere lo stralcio
+                  del 50% per il cliente mediante un accordo.
+               </p>
+               <span>
+                  “Con i Professionisti del Debito abbiamo finalmente risolto una volta per tutte i problemi del nostro
+                  debito con le banche. Il team di professionisti è molto competente e ha saputo supportarci per tutto
+                  ciò
+                  di cui abbiamo avuto necessità. Grazie!”
+               </span>
+            </article>
+            <article class="testimonials__case-study-card">
+               <h3>Il cliente aveva accumulato 30 milioni di debiti.</h3>
+               <p>
+                  I Professionisti del Debito hanno ristrutturato il debito tramite transazione fiscale mediante un
+                  accordo
+                  di ristrutturazione del debito con transazione fiscale
+               </p>
+               <span>
+                  “Avevamo un grosso debito con banche e fisco, e non sapevamo come portare avanti il nostro gruppo. Il
+                  team dei Professionisti del Debito ci ha aiutato a ristrutturare il debito e abbiamo potuto così
+                  focalizzarci sulla nostra impresa liberi da problemi e abbiamo fatto +15% nell'ultimo anno!“
+               </span>
+            </article>
+            <article class="testimonials__case-study-card">
+               <h3>Il cliente aveva accumulato 20 milioni di debiti con le banche.</h3>
+               <p>
+                  I Professionisti del Debito sono stati in grado di risanare il debito mediante un accordo stipulato
+                  grazie all'art. 67.
+               </p>
+               <span>
+                  “Nel 2018 avevo un grande debito finanziario, ma non riuscivo a risolvere il problema. Così mi sono
+                  affidato ai Professionisti del Debito e in poco tempo sono riusciti ad aiutarmi con grande competenza
+                  e
+                  professionalità! Grazie per il supporto.”
+               </span>
+            </article>
+         </div>
+      </section>
+      <section class="description container">
+         <h2>Per imprenditori e aziende che hanno difficoltà a ripagare i propri debiti e stanno cercando una soluzione
+            per creare stabilità. </h2>
+         <h3>Il team è formato da esperti commercialisti e legali, specializzati nel campo della ristrutturazione del
+            debito. </h3>
+         <p>I Professionisti del Debito è un team di esperti specializzati negli investimenti, nella consulenza sul
+            debito, nella ristrutturazione del debito finanziario, commercialisti qualificati in crisi d’impresa e
+            avvocati. Si rivolgono a PMI di ogni settore e le guidano in tutto il processo d’investimento competitivo
+            conducendoli a nuove opportunità. Per poter disegnare una soluzione su misura il cliente potrà affidarsi
+            completamente ai professonisti grazie al loro consolidato riconoscimento.</p>
+         <p class="description__list-name">I Servizi offerti comprendono: </p>
+         <ul>
+            <li>Ricerca linee di credito e reperimento di capitali di salvataggio. </li>
+            <li>Finanziamenti MLT chirografari, ipotecari, bullet e partecipativi finalizzati alla liquidità, agli
+               investimenti produttivi, alla ricapitalizzazione ed al riequilibrio finanziario. </li>
+            <li>Ristrutturazione del debito: piani attestati, piani di ristrutturazione del debito, concordato
+               preventivo liquidatori ed in continuità diretta-indiretta. </li>
+            <li>Concordati fallimentari ex art.124 l.f.</li>
+            <li>Composizione assistita della crisi d’impresa secondo il nuovo codice della crisi e dell’insolvenza.
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Step</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Vantaggi</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Funzioni</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Faq</a>
-            </li>
-            <li class="nav-item">
-              <a class="btn btn-secondary" href="#">CONTATTACI</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <section class="hero">
-      <div class="container">
-        <div class="hero__top-content">
-          <div class="hero__top-text">
-            <h1>I Professionisti del Debito</h1>
-            <h2>
-              assistiamo le aziende a risolvere le problematiche di debito
-            </h2>
-            <p class="hero__intro">
-              Concentra la tua creatività sul tuo business, a gestire i problemi
-              del debito ci pensiamo noi.
+            <li>Accordi di ristrutturazione con intermediari finanziari e convenzioni di moratoria ex art.182-septies
+               l.f.</li>
+            <li>Gestione crediti deteriorati (UTP Unlikely to pay, NPL, Non Performing Loans. M&A, Emissione di
+               Bond/Mini Bond. </li>
+         </ul>
+         <p>L’obiettivo finale è quello di soddisfare l’esigenza del cliente, aiutandolo a emergere sul mercato e a
+            ottenere la liquidità necessaria per espandere la propria attività di Business.</p>
+         <img src="./assets/description.png" alt="description" class="description__img">
+         <article class="description__mission">
+            <h3>Mission</h3>
+            <p>Puoi risolvere il problema del debito in poco tempo affidandoti al nostro team e utilizzare la nostra
+               conoscenza e le nostre informazioni per risanare la tua posizione e costruire nuovamente la tua
+               prosperità economica senza pensieri.</p>
+
+            <p>Tuttavia la maggior parte degli imprenditori non hanno le conoscenza necessarie o tutti i contatti che
+               servono per poter procedere in maniera tempestiva a stralciare il debito.</p>
+
+            <p>Noi siamo un insieme di professionisti che può aiutarti a risolvere definitivamente il problema del
+               debito.
             </p>
-          </div>
-        </div>
-        <div class="hero__bottom-text">
-          <p>Risparmia tempo e denaro</p>
-          <a href="#" class="btn btn-secondary">PRENOTA LA TUA CONSULENZA</a>
-          <p>con uno dei nostri esperti</p>
-        </div>
-        <!-- <img src="./assets/hero.png?as=webp" alt=""> -->
-      </div>
-    </section>
-    <section class="logos container">
-      <div class="logos__container">
-        <img src="./assets/logos/economy-logo.svg" alt="Logo Economy" /><img
-          src="./assets/logos/milano-finanza-logo.svg"
-          alt="Logo Milano Finanza"
-        />
-        <img
-          src="./assets/logos/sole-24-logo.svg"
-          alt="Logo Il Sole 24 Ore"
-        /><img src="./assets/logos/forbes-logo.svg" alt="Logo Forbes" />
-      </div>
-    </section>
-    <section class="tagline container">
-      <h2>
-        Oltre 2.000 aziende hanno superato la crisi finanziaria grazie ad una
-        tempestiva ristrutturazione del debito.
-      </h2>
-    </section>
-    <section class="testimonials container">
-      <h2>Casi Studio</h2>
-      <div class="testimonials__container">
-        <article class="testimonials__case-study-card">
-          <h3>Il nostro cliente aveva 5 milioni di debiti con le banche.</h3>
-          <p>
-            I Professionisti del Debito sono riusciti ad ottenere lo stralcio
-            del 50% per il cliente mediante un accordo.
-          </p>
-        </article>
-        <article class="testimonials__case-study-card"></article>
-        <article class="testimonials__case-study-card"></article>
-      </div>
-    </section>
-    <script src="./index.js" type="module"></script>
-  </body>
+            <p>La nostra mission è quella di aiutare gli imprenditori, che sono i promotori del benessere economico di
+               un paese, per aiutarli a risanare la propria posizione. </p>
+         </article>
+      </section>
+      <section class="steps container">
+         <article class="steps__step">
+            <h3>Step 1</h3>
+            <h2>Richiedi nuova finanza per far espandere finalmente la tua attività</h2>
+            <div class="steps__img-container">
+               <img src="./assets/step-1.png" alt="step-1">
+            </div>
+            <div class="steps__row">
+               <div class="steps__item">
+                  <h3>Metodo precedente </h3>
+                  <p>L'imprenditore che voleva crescere e cercava nuova finanza non aveva idea di come fare, era alle
+                     prese con la gestione dell'azienda e non aveva il tempo e le risorse per farla crescere.</p>
+               </div>
+               <div class="steps__item">
+                  <h3>Risultato precedente </h3>
+                  <p>Il risultato era che l'imprenditore rimaneva sul suo business pre-esistente ma non riusciva a
+                     scalare per mancanza di risorse economiche ed umane, finendo per rimanere fermo allo stesso punto.
+                  </p>
+               </div>
+            </div>
+            <div class="steps__row">
+               <div class="steps__item">
+                  <h3>Nuovo metodo </h3>
+                  <p>Iniziando un percorso di consulenza con i Professionisti del Debito si avrà un accesso facilitato a
+                     maggior capitale, permettendoti di accelerare la crescita della tua azienda.</p>
+               </div>
+               <div class="steps__item">
+                  <h3>Nuovo risultato </h3>
+                  <p>Grazie al percorso intrapreso avrai più opportunità e risorse per far espandere il tuo progetto e
+                     scalare il tuo business.</p>
+               </div>
+            </div>
+            <p>Il percorso con i Professionisti del Debito aiuta l’imprenditore a migliorare l’efficienza della sua
+               impresa, portandola a raggiungere con maggiore facilità gli obiettivi di crescita.</p>
+         </article>
+         <article class="steps__step">
+            <h3>Step 2</h3>
+            <h2>Ristruttura il tuo debito</h2>
+            <div class="steps__img-container">
+               <img src="./assets/step-2.png" alt="step-2">
+            </div>
+            <div class="steps__row">
+               <div class="steps__item">
+                  <h3>Metodo precedente </h3>
+                  <p>L'imprenditore era preoccupato dal suo indebitamento ma non sapeva come dialogare con i creditori
+                     essendo il processo di negoziazione molto difficile.</p>
+               </div>
+               <div class="steps__item">
+                  <h3>Risultato precedente </h3>
+                  <p>Venendo distratto dalla gestione di queste pratiche, l'imprenditore toglieva del tempo alla
+                     produzione.
+                  </p>
+               </div>
+            </div>
+            <div class="steps__row">
+               <div class="steps__item">
+                  <h3>Nuovo metodo </h3>
+                  <p>Grazie all'utilizzo delle nostre conoscenze otterrai una migliore gestione dei creditori e delle
+                     trattative con le banche. </p>
+               </div>
+               <div class="steps__item">
+                  <h3>Nuovo risultato </h3>
+                  <p>Il nostro team di esperti ti aiuterà a ristrutturare il tuo debito atteaverso piani attestati,
+                     piani di ristrutturazione del debito o concordati preventivi. </p>
+               </div>
+            </div>
+            <p>I nostri Professionisti del Debito prenderanno in mano il processo di ristrutturazione al posto tuo,
+               facendoti risparmiare tempo e denaro. </p>
+         </article>
+         <article class="steps__step">
+            <h3>Step 3</h3>
+            <h2>Struttura la tua azienda o attività per renderla stabile nel tempo</h2>
+            <div class="steps__img-container">
+               <img src="./assets/step-3.png" alt="step-2">
+            </div>
+            <div class="steps__row">
+               <div class="steps__item">
+                  <h3>Metodo precedente </h3>
+                  <p>L'imprenditore voleva creare una struttura finanziaria e cercava un CFO per la propria azienda.</p>
+               </div>
+               <div class="steps__item">
+                  <h3>Risultato precedente </h3>
+                  <p>L'imprenditore finiva con il dover gestire le proprie risorse e il ciclo finanziario in autonomia,
+                     quindi si trovava in difficoltà.
+                  </p>
+               </div>
+            </div>
+            <div class="steps__row steps__row_last">
+               <div class="steps__item">
+                  <h3>Nuovo metodo </h3>
+                  <p>Con l'aiuto dei nostri professionisti che assistono l'azienda nell'analisi dei flussi di cassa e
+                     nella reportistica per gli istituti bancari, verrai supportato e non avrai nessuna difficoltà.</p>
+               </div>
+               <div class="steps__item">
+                  <h3>Nuovo risultato </h3>
+                  <p>Il nostro team di esperti formerà il tuo personale a livello finanziario, in modo tale da
+                     facilitarti il lavoro.</p>
+               </div>
+            </div>
+         </article>
+      </section>
+      <section class="benefits container">
+         <aticle class="benefit">
+            <h3>Vantaggio 1</h3>
+            <h2>Struttura la tua azienda o attività per renderla stabile nel tempo</h2>
+            <p>I Professionisti del Debito ti aiutano nel gestire al meglio i tuoi flussi e ti dicono come fare per non
+               trovarti in perdita.</p>
+            <p>Avrai una consulenza personalizzata e su misura per te, per capire dove esattamente avrai necessità di
+               supporto.</p>
+            <p>Finalmente potrai risolvere il problema della gestione finanziaria, e avrai un metodo che risolve una
+               volta per tutte il controllo di gestione.</p>
+         </aticle>
+         <aticle class="benefit">
+            <h3>Vantaggio 2</h3>
+            <h2>Sistemiamo i tuoi debiti con il fisco</h2>
+            <p>Con i Professionisti del Debito hai finalmente il supporto di un team a tua disposizione che in base alla
+               tua situazione ti dirà cosa fare.</p>
+            <p>Avrai una consulenza personalizzata e su misura per te, per capire dove esattamente avrai necessità di
+               supporto.</p>
+            <p>Finalmente saprai come risolvere il problema che sta impedendo la tua espansione.</p>
+         </aticle>
+         <aticle class="benefit">
+            <h3>Vantaggio 3</h3>
+            <h2>Ti aiutiamo a elaborare un business plan efficace | Ti guidiamo durante tutto il processo d'investimento
+               per creare una soluzione ad hoc</h2>
+            <p>Le aziende che hanno un business plan e degli obiettivi chiari e definiti hanno percentuali molto più
+               alte di espansione.</p>
+            <p>Grazie al nostro know-how sarai in grado di concretizzare le tue ambizioni, con il supporto nella stesura
+               e realizzazione di un business plan davvero efficace.</p>
+            <p>Di' addio alla mancanza di motivazione o di risultati, e a perdite finanziarie. Grazie all'utilizzo del
+               business plan, saprai esattamente come strutturare e gestire al meglio la tua azienda.</p>
+         </aticle>
+      </section>
+      <section class="functions container">
+         <h2>Funzioni</h2>
+         <div class="functions__row">
+            <div class="functions__function">
+               <h3>Consulenza tagliata su misura
+                  per te</h3>
+               <img src="./assets/function-1.png" alt="">
+               <p>Grazie ad un'esperienza pluriennale nel campo del debito, i nostri professionisti sanno esattamente
+                  cosa va fatto per aiutarti a risolvere nel minor tempo possibile e con il minor dispendio di risorse,
+                  il problema del debito.</p>
+            </div>
+            <div class="functions__function">
+               <h3>Un supporto concreto nella gestione delle tue finanze.</h3>
+               <img src="./assets/function-2.png" alt="">
+               <p>Per non ricadere nel problema del debito, è necessario imparare a gestire in maniera più efficace il
+                  denario e i flussi di cassa. Grazie al nostro team questo sarà possibile, attraverso la nostra
+                  conoscenza che metteremo a tua disposizione. </p>
+            </div>
+         </div>
+         <div class="functions__row">
+            <div class="functions__function">
+               <h3>La tua roadmap personale per il successo dell'azienda.</h3>
+               <img src="./assets/function-3.png" alt="">
+               <p>Grazie al nostro metodo, avrai un business plan e una roadmap chiara degli obiettivi, dell'allocazione
+                  del budget e delle risorse per rimanere solvente e garantire il successo della tua attività.</p>
+            </div>
+            <div class="functions__function">
+               <h3>Il potere della conoscenza finanziaria, nelle tue mani.</h3>
+               <img src="./assets/function-4.png" alt="">
+               <p>Grazie ad i Professionisti del Debito avrai accesso alla conoscenza e il know-how, nonchè il supporto
+                  per gestire al meglio le tue finanze, risolvere una volta per tutte il problema del tuo debito e far
+                  espandere la tua azienda.</p>
+            </div>
+         </div>
+         <div class="functions__row">
+            <div class="functions__function">
+               <h3>Riunioni periodiche direttamente con un professionista a te assegnato </h3>
+               <img src="./assets/function-5.png" alt="">
+               <p>Potrai scegliere il professionista che più si addice alle tue esigenze, per esperienza e know-how e
+                  fine alla risoluzione del debito avrai un consulente a te dedicato.</p>
+            </div>
+            <div class="functions__function">
+               <h3>Un supporto mirato </h3>
+               <img src="./assets/function-6.png" alt="">
+               <p>I nostri consulenti sono i migliori in Italia nella risoluzione di questi problemi. Avrai una
+                  consulenza mirata, e formazione specifica su come risolvere il problema una volta per tutte. </p>
+            </div>
+         </div>
+         <div class="functions__btn-container">
+            <a href="#" class="btn btn-secondary">ENTRA IN AZIONE ORA!</a>
+         </div>
+      </section>
+      <section class="contact container">
+         <h3>Scopri i nostri servizi!</h3>
+         <p>Compila il modulo inserendo i tuoi dati per venire contattato da uno dei nostri professionisti.</p>
+         <form action="POST" class="contact__form">
+            <div class="contact__form-left">
+               <h4>Name</h4>
+               <input type="text" name="name" id="name" placeholder="Name" class="contact__form-left__input contact__form-left__input_name">
+               <input type="email" name="email" id="email" placeholder="Email" class="contact__form-left__input">
+               <input type="number" name="number" id="number" placeholder="Phone number" class="contact__form-left__input">
+            </div>
+            <div class="contact__form-right">
+               <input type="text" name="message" id="message" placeholder="Message">
+               <button type="submit" class="btn btn-secondary">Richiedi maggiori informazioni</button>
+            </div>
+         </form>
+         <p>Se desideri puoi schedulare direttamente una chiamata con uno dei nostri consulenti!</p>
+         <button type="submit" class="btn btn-secondary">Prenota una chiamata con un consulente</button>
+      </section>
+   </main>
+   <script src="./index.js" type="module"></script>
+</body>
+
 </html>

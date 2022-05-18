@@ -1,0 +1,36 @@
+.contact{
+   margin-top: 12rem;
+   background-color: var(--color-primary);
+   border-radius: 20px;
+   padding: 5rem 7rem;
+   h3{
+      text-align: left;
+      color: #fff;
+      font-size: 2.8rem;
+   }
+   p{
+      color: #fff;
+      font-size: 2.4rem;
+   }
+   &__form{
+      margin-top: 7rem;
+      display: flex;
+      justify-content: space-between;
+      &-left{
+         &__input{
+            width: 80%;
+            height: 6rem;
+            margin-top: 4rem;
+            &_name{
+               margin: 0;
+            }
+         }
+         
+         h4{
+            color: #fff;
+            font-size: 1.6rem;
+         }
+         
+      }
+   }
+}

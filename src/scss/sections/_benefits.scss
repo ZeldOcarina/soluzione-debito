@@ -1,0 +1,18 @@
+.benefits{
+   padding: 0 6%;
+   .benefit{
+      h3{
+         margin-top: 10rem;
+         font-size: 2.4rem;
+      }
+      h2{
+         color: var(--color-primary);
+         text-transform: none;
+         font-size: 3.8rem;
+         margin-bottom: 5rem;
+      }
+      p{
+         margin-top: 3rem;
+      }
+   }
+}

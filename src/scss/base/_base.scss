@@ -57,7 +57,7 @@ h2 {
   margin-bottom: 4rem;
 }
 h3 {
-  font-size: 2rem;
+  font-size: 2.4rem;
   text-align: center;
   color: $black;
   margin-bottom: 3rem;
@@ -91,4 +91,10 @@ hr {
 
 strong {
   font-weight: 700;
+}
+
+ul,
+li{
+  letter-spacing: 0.1rem;
+  font-size: 1.8rem;
 }
