@@ -368,20 +368,65 @@
          <p>Compila il modulo inserendo i tuoi dati per venire contattato da uno dei nostri professionisti.</p>
          <form action="POST" class="contact__form">
             <div class="contact__form-left">
-               <h4>Name</h4>
-               <input type="text" name="name" id="name" placeholder="Name" class="contact__form-left__input contact__form-left__input_name">
+               <input type="text" name="name" id="name" placeholder="Name"
+                  class="contact__form-left__input contact__form-left__input_name">
                <input type="email" name="email" id="email" placeholder="Email" class="contact__form-left__input">
-               <input type="number" name="number" id="number" placeholder="Phone number" class="contact__form-left__input">
+               <input type="number" name="number" id="number" placeholder="Phone number"
+                  class="contact__form-left__input">
             </div>
             <div class="contact__form-right">
-               <input type="text" name="message" id="message" placeholder="Message">
+               <textarea name="message" id="message" placeholder="Message"></textarea>
                <button type="submit" class="btn btn-secondary">Richiedi maggiori informazioni</button>
             </div>
          </form>
          <p>Se desideri puoi schedulare direttamente una chiamata con uno dei nostri consulenti!</p>
          <button type="submit" class="btn btn-secondary">Prenota una chiamata con un consulente</button>
       </section>
+      <section class="faq container">
+         <h2>FAQ</h2>
+         <div class="faq__content">
+            <div class="faq__column">
+               <h3>A chi mi posso rivolgere per risolvere i miei problemi finanziari?</h3>
+               <p>Puoi prenotare una consulenza con uno dei nostri esperti o compilare il nostro form dedicato per
+                  maggiori informazioni: questo ti permetterà di risparmiare tempo e denaro.</p>
+               <h3>Di quali strumenti posso avvalermi per gestire al meglio i miei problemi con il fisco?</h3>
+               <p>Gli strumenti principali utilizzati per risolvere i problemi con il fisco sono: procedure di
+                  transazione, vizi formali e leggi speciali; ciascun caso ha la sua personale risoluzione.</p>
+               <h3>Qual è il momento migliore per ristrutturare il mio debito?</h3>
+               <p>Il momento migliore per ristrutturare il debito è prima che partano tutte le segnalazioni alla
+                  Centrale del Rischi, ovvero la banca dati che si occupa di monitorare i debiti di famiglie e imprese.
+               </p>
+               <h3>Posso eventualmente transare un credito acquistato da altri?</h3>
+               <p>Certo, i nostri professionisti ti assisteranno nel processo di trasazione con la controparte.</p>
+            </div>
+            <div class="faq__column">
+               <h3>C'è la possibilità di avere un pre-check?</h3>
+               <p>Certamente, i nostri consulenti forniscono un pre-check per capire la procedura più idonea da
+                  intraprendere in base alla tua situazione finanziaria.</p>
+               <h3>Quali strumenti posso utilizzare per ristrutturare il mio debito con le banche?</h3>
+               <p>Gli strumenti di cui ci avvaliamo per ristrutturare il debito con le banche si basano sul contenuto
+                  degli articoli 67 e 182/bis, che consentono all'imprenditore in stato di crisi di proporre un
+                  progetto, rivolto ai creditori, che appaia idoneo a consentire il risanamento.</p>
+               <h3>Posso sospendere le eventuali rate dei miei finanziamenti durante la procedura di ristrutturazione
+                  del mio debito?</h3>
+               <p>Sì, sarà possibile sospendere le rate attraverso accordi di sospensione temporanea nel mentre si
+                  attiva il processo di ristrutturazione.</p>
+               <h3>Quanto tempo dura una procedura di risanamento del debito?</h3>
+               <p>Una procedura di questo tipo può variare di molto in base al caso specifico, alcuni risanamenti durano
+                  4 mesi mentre altri più complessi possono arrivare ad una durata di 6 mesi.</p>
+            </div>
+         </div>
+      </section>
    </main>
+   <footer class="footer">
+      <div class="footer__content container">
+         <img src="./assets/logos/logo-footer.svg" alt="logo" class="footer__logo">
+         <div class="footer__text">
+            <p>Galleria San Babila 4a - Milano (MI)</p>
+            <p><span id="date"></span> &copy; Rocket Capital. All rights reserved.</p>
+         </div>
+      </div>
+   </footer>
    <script src="./index.js" type="module"></script>
 </body>
 

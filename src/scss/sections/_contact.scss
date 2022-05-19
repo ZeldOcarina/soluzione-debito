@@ -17,20 +17,38 @@
       display: flex;
       justify-content: space-between;
       &-left{
+         width: 40%;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
          &__input{
-            width: 80%;
+            width: 100%;
             height: 6rem;
-            margin-top: 4rem;
-            &_name{
-               margin: 0;
-            }
+            padding-left: 1rem;
          }
-         
-         h4{
-            color: #fff;
-            font-size: 1.6rem;
-         }
-         
       }
+      &-right{
+         width: 40%;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         textarea{
+            width: 100%;
+            min-height: 14rem;
+            resize: none;
+            padding: 1rem;
+         }
+         button{
+            margin-top: 5rem;
+            width: 70%;
+         }
+      }
+   }
+   p:last-of-type{
+      margin-top: 7rem;
+      width: 50%;
+   }
+   button{
+      margin-top: 4.6rem;
    }
 }

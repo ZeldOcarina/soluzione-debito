@@ -1,0 +1,27 @@
+.faq{
+   margin-top: 12rem;
+   padding: 0 6%;
+   h2{
+      width: 7%;
+      margin: 0 auto;
+      text-align: center;
+      padding-bottom: 3.5rem;
+      border-bottom: 4px solid #000;
+   }
+   &__content{
+      margin-top: 6rem;
+      display: flex;
+      justify-content: space-between;
+   }
+   &__column{
+      width: 49%;
+      h3{
+         text-align: left;
+         font-weight: 600;
+      }
+      p{
+         margin-bottom: 4rem;
+         font-weight: 400;
+      }
+   }
+}
