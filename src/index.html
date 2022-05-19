@@ -5,7 +5,7 @@
    <meta charset="UTF-8" />
    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>Document</title>
+   <title>Soluzione Debito</title>
    <!-- Google Fonts Link: https://fonts.google.com/share?selection.family=Open%20Sans:wght@300;400;600;700 -->
    <link rel="preconnect" href="https://fonts.googleapis.com" />
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,13 +14,7 @@
 </head>
 
 <body>
-   <header>
-      <picture class="hero__image">
-         <source srcset="./assets/hero.png?as=webp&width=1900" media="(max-width: 1900px)" type="image/webp" />
-         <source srcset="./assets/hero.png?as=webp&width=1800" media="(max-width: 1800px)" type="image/webp" />
-         <source srcset="./assets/hero.png?as=webp&width=800" media="(max-width: 800px)" type="image/webp" />
-         <img src="./assets/hero.png?as=webp" width="400" type="image/webp" />
-      </picture>
+   <header class="header">
       <nav class="navbar navbar-expand-lg navbar-light">
          <div class="container">
             <a class="navbar-brand"><img class="navbar__logo" src="./assets/rocket-color.png" alt="Rocket Logo" /></a>
@@ -52,12 +46,10 @@
             </div>
          </div>
       </nav>
-   </header>
-   <main>
       <section class="hero">
          <div class="container">
-            <div class="hero__top-content">
-               <div class="hero__top-text">
+            <div class="hero__content">
+               <div class="hero__text">
                   <h1>I Professionisti del Debito</h1>
                   <h2>
                      assistiamo le aziende a risolvere le problematiche di debito
@@ -67,15 +59,16 @@
                      del debito ci pensiamo noi.
                   </p>
                </div>
+               <div class="hero__bottom">
+                  <p>Risparmia tempo e denaro</p>
+                  <a href="#" class="btn btn-secondary">PRENOTA LA TUA CONSULENZA</a>
+                  <p>con uno dei nostri esperti</p>
+               </div>
+               <!-- <img src="./assets/hero.png?as=webp" alt=""> -->
             </div>
-            <div class="hero__bottom-text">
-               <p>Risparmia tempo e denaro</p>
-               <a href="#" class="btn btn-secondary">PRENOTA LA TUA CONSULENZA</a>
-               <p>con uno dei nostri esperti</p>
-            </div>
-            <!-- <img src="./assets/hero.png?as=webp" alt=""> -->
-         </div>
       </section>
+   </header>
+   <main>
       <section class="logos container">
          <div class="logos__container">
             <img src="./assets/logos/economy-logo.svg" alt="Logo Economy" /><img

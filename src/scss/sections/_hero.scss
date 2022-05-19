@@ -1,78 +1,70 @@
-$hero-top-size: 74vh;
-
 .hero {
-  height: $hero-top-size;
+   height: 73vh;
+   .container{
+      height: 100%;
+   }
+   &__content {
+      height: 100%;
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding: 0 3%;
+   }
 
-  .container {
-    display: grid;
-    align-items: center;
-    height: 100%;
-    position: relative;
-  }
+   h1 {
+      font-size: 4.8rem;
+      font-weight: 600;
 
-  &__top-content {
-    width: 70%;
-    transform: translateY(calc(86px / 2 - 11rem));
-  }
+      @include respond(tab-land) {
+         font-size: 4.2rem;
+      }
 
-  &__image {
-    img {
+      @include respond(tab-port) {
+         font-size: 3.6rem;
+      }
+   }
+
+   h2 {
+      font-size: 2.4rem;
+      font-weight: 600;
+      text-align: left;
+      text-transform: none;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
       width: 100%;
-      height: calc($hero-top-size + 86px);
-      object-fit: cover;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-    }
-  }
 
-  h1 {
-    font-size: 4.8rem;
-    font-weight: 600;
-    @include respond(tab-land){
-       font-size: 4.2rem;
-    }
-  }
+      @include respond(tab-land) {
+         font-size: 2rem;
+      }
 
-  h2 {
-    font-size: 2.4rem;
-    font-weight: 600;
-    text-align: left;
-    text-transform: none;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    width: 100%;
-    @include respond(tab-land){
+      @include respond(tab-port) {
+         font-size: 1.6rem;
+      }
+
+   }
+
+   &__intro {
       font-size: 2rem;
-   }
-  }
+      margin-bottom: 0;
+      @include respond(tab-land) {
+         font-size: 1.8rem;
+      }
 
-  &__intro {
-    width: 70%;
-    font-size: 2rem;
-    margin-bottom: 0;
-    @include respond(tab-land){
-      font-size: 1.8rem;
-   }
-  }
-
-  &__bottom-text {
-    position: absolute;
-    bottom: 5rem;
-    left: 0.75%;
-
-    p {
-      margin: 0;
-      font-size: 1.4rem;
-      font-weight: 400;
-    }
-
-    .btn {
-      margin: 1rem 0;
-      @include respond(tab-land){
+      @include respond(tab-port) {
          font-size: 1.4rem;
       }
-    }
-  }
+   }
+
+   a {
+      width: 45%;
+      @include respond(tab-land) {
+         width: 70%;
+      }
+
+      @include respond(tab-port) {
+         width: 60%;
+      }
+   }
+
 }
