@@ -2,6 +2,9 @@
    margin-top: 16rem;
    height: 120px;
    background-color: var(--color-primary);
+   @include respond(tab-land) {
+      height: 100px;
+    }
    &__content{
       height: 100%;
       display: flex;
@@ -17,6 +20,9 @@
          font-size: 1.4rem;
          font-weight: 200;
          color: rgba(255, 255, 255, 0.6);
+         @include respond(tab-land) {
+            font-size: 1.2rem;
+          }
       }
    }
 }

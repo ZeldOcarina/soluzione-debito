@@ -7,10 +7,16 @@
       text-align: left;
       color: #fff;
       font-size: 2.8rem;
+      @include respond(tab-land) {
+         font-size: 2.4rem;
+       }
    }
    p{
       color: #fff;
       font-size: 2.4rem;
+      @include respond(tab-land) {
+         font-size: 2rem;
+       }
    }
    &__form{
       margin-top: 7rem;
@@ -21,6 +27,9 @@
          display: flex;
          flex-direction: column;
          justify-content: space-between;
+         @include respond(tab-land) {
+            width: 45%;
+          }
          &__input{
             width: 100%;
             height: 6rem;
@@ -32,6 +41,9 @@
          display: flex;
          flex-direction: column;
          justify-content: space-between;
+         @include respond(tab-land) {
+            width: 45%;
+          }
          textarea{
             width: 100%;
             min-height: 14rem;
@@ -41,6 +53,9 @@
          button{
             margin-top: 5rem;
             width: 70%;
+            @include respond(tab-land) {
+               width: 100%;
+             }
          }
       }
    }

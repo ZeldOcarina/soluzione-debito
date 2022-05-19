@@ -1,5 +1,14 @@
 .navbar {
-  &__logo {
-    width: 18rem;
-  }
+   &-nav{
+     li{
+        a{
+         @include respond(tab-land){
+            font-size: 1.4rem;
+         }
+        }
+     }
+   }
+   &__logo {
+      width: 18rem;
+   }
 }
