@@ -15,16 +15,15 @@ body {
    line-height: 1.5;
    background-color: var(--body-bg-color);
 
-   @include respond(phone-land) {
-      font-size: $mobile-font-size;
-   }
-
    @include respond(tab-land) {
       font-size: 1.6rem;
    }
    
    @include respond(tab-port) {
       font-size: 1.4rem;
+   }
+   @include respond(iphone-5) {
+      font-size: 1.2rem;
    }
 }
 
@@ -53,10 +52,6 @@ h4,
 h5,
 h6 {
    font-size: $title-font-size;
-
-   @include respond(iphone-5) {
-      font-size: 2rem;
-   }
 }
 
 h2 {
@@ -70,6 +65,15 @@ h2 {
    }
    @include respond(tab-port) {
       font-size: 2.8rem;
+   }
+   @include respond(phone-land){
+      font-size: 2.6rem;
+   }
+   @include respond(phone-port) {
+      font-size: 2.2rem;
+   }
+   @include respond(iphone-5) {
+      font-size: 2rem;
    }
 }
 
@@ -90,6 +94,13 @@ h3 {
    @include respond(tab-port) {
       font-size: 1.6rem;
    }
+   @include respond(phone-port) {
+      font-size: 1.5rem;
+   }
+   @include respond(iphone-5) {
+      font-size: 1.3rem;
+   }
+
 }
 
 p {
@@ -127,4 +138,12 @@ li {
    @include respond(tab-port) {
       font-size: 1.4rem;
    }
+   @include respond(iphone-5) {
+      font-size: 1.2rem;
+   }
+
+}
+
+main{
+   padding: 0 2%;
 }

@@ -1,15 +1,31 @@
 .hero {
-   height: 73vh;
-   .container{
-      height: 100%;
-   }
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   
    &__content {
-      height: 100%;
       width: 70%;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
-      padding: 0 3%;
+      padding: 14% 3% 2% 3%;
+      @include respond(tab-land) {
+         padding: 14% 0 2% 0;
+      }
+      @include respond(tab-port){
+         padding: 14% 0 2% 0;
+      }
+      @include respond(phone-land){
+         padding: 16% 0 2% 3%;
+         width: 65%;
+      }
+      @include respond(phone-port) {
+         padding: 24% 0 2% 3%;
+         width: 85%;
+      }
+      @include respond(iphone-5) {
+         padding: 26% 0 2% 3%;
+      }
    }
 
    h1 {
@@ -21,7 +37,14 @@
       }
 
       @include respond(tab-port) {
-         font-size: 3.6rem;
+         font-size: 3.2rem;
+      }
+      @include respond(phone-land){
+         font-size: 2.6rem;
+      }
+      @include respond(phone-port) {
+         font-size: 2.4rem;
+         width: 85%;
       }
    }
 
@@ -39,7 +62,11 @@
       }
 
       @include respond(tab-port) {
-         font-size: 1.6rem;
+         font-size: 1.4rem;
+      }
+      @include respond(phone-port) {
+         font-size: 1.4rem;
+         width: 80%;
       }
 
    }
@@ -54,16 +81,31 @@
       @include respond(tab-port) {
          font-size: 1.4rem;
       }
+      @include respond(phone-port) {
+         font-weight: 400;
+      }
    }
 
-   a {
-      width: 45%;
-      @include respond(tab-land) {
-         width: 70%;
-      }
-
-      @include respond(tab-port) {
-         width: 60%;
+   
+   &__bottom{
+      margin-top: 8%;
+      font-weight: 400;
+      .btn {
+         width: 45%;
+         @include respond(tab-land) {
+            width: 80%;
+         }
+         @include respond(tab-port) {
+            width: 60%;
+         }
+         @include respond(phone-land) {
+            width: 90%;
+            font-size: 1.4rem;
+         }
+         @include respond(phone-port) {
+            font-size: 1.4rem;
+            width: 75%;
+         }
       }
    }
 

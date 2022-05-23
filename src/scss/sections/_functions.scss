@@ -1,6 +1,12 @@
 .functions{
    padding: 0 6%;
    margin-top: 16rem;
+   @include respond(tab-port) {
+      margin-top: 12rem;
+    }
+    @include respond(iphone-5) {
+      margin-top: 8rem;
+   }
    h2{
       color: var(--color-primary);
       text-transform: none;
@@ -11,11 +17,29 @@
       justify-content: space-between;
       margin-top: 5rem;
       margin-bottom: 5rem;
+      flex-wrap: wrap;
+      @include respond(phone-port) {
+         margin: 0;
+      }
    }
    &__function{
       width: 49%;
+      @include respond(phone-port) {
+         width: 80%;
+         margin: 0 auto;
+         margin-top: 1.5rem;
+         padding-bottom: 1.5rem;
+         border-bottom: 1px solid #c6c6c6;
+      }
+      &_last{
+         border-bottom: none;
+      }
       h3{
          min-height: 6rem;
+         @include respond(phone-port) {
+            margin-bottom: 2rem;
+            min-height: auto;
+         }
       }
       img{
          width: 100%;
@@ -33,6 +57,9 @@
          @include respond(tab-land) {
             font-size: 2rem;
           }
+         @include respond(phone-port) {
+            font-size: 1.4rem;
+         }
       }
    }
 }

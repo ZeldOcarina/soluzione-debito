@@ -34,8 +34,13 @@
    }
    &__step{
       margin-top: 13rem;
+      @include respond(iphone-5) {
+         margin-top: 8rem;
+      }
       p{
          margin-top: 4rem;
+         
       }
+      
    }
 }

@@ -1,15 +1,18 @@
 .description {
    margin-top: 12rem;
    padding: 0 6%;
-
+   @include respond(phone-port) {
+      margin-top: 6rem;
+    }
    h2 {
       color: var(--color-primary);
       text-transform: none;
-      font-size: 3.8rem;
       margin-bottom: 6rem;
+      @include respond(iphone-5) {
+         margin-bottom: 3rem;
+      }
    }
    h3{
-      font-size: 2.4rem;
       width: 80%;
       margin: 0 auto;
       margin-bottom: 4rem;
@@ -24,9 +27,15 @@
    &__img{
       margin-top: 10rem;
       width: 100%;
+      @include respond(iphone-5) {
+         margin-top: 3rem;
+      }
    }
    &__mission{
       margin-top: 6rem;
+      @include respond(iphone-5) {
+         margin-top: 3rem;
+      }
       p{
          margin: 2.4rem 0;
       }

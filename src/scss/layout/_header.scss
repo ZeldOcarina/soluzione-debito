@@ -1,5 +1,15 @@
 .header{
+   display: flex;
+   flex-direction: column;
    background-image: url('../assets/hero.png');
    background-size: cover;
    background-position: center;
+   background-repeat: no-repeat;
+   @include respond(phone-land){
+      background-position: 65% 0;
+   }
+   @include respond(phone-port){
+      background-image: url('../assets/hero-mob.png');
+      background-position: 100% 25%;
+   }
 }
