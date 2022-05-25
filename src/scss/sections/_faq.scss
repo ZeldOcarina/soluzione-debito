@@ -1,12 +1,18 @@
 .faq{
    margin-top: 12rem;
    padding: 0 6%;
-   h2{
-      width: 7%;
-      margin: 0 auto;
-      text-align: center;
-      padding-bottom: 3.5rem;
+   @include respond(phone-port){
+      margin-top: 8rem;
+   }
+   &__title{
+      width: 18%;
       border-bottom: 4px solid #000;
+      margin: 0 auto;
+      padding-bottom: 2rem;
+      h2{
+         text-align: center;
+         margin: 0;
+      }
    }
    &__content{
       margin-top: 6rem;
@@ -22,6 +28,9 @@
       p{
          margin-bottom: 4rem;
          font-weight: 400;
+         @include respond(phone-port) {
+            font-size: 1.2rem;
+          }
       }
    }
 }

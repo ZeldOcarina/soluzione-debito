@@ -5,7 +5,7 @@
    <meta charset="UTF-8" />
    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>Document</title>
+   <title>Soluzione Debito</title>
    <!-- Google Fonts Link: https://fonts.google.com/share?selection.family=Open%20Sans:wght@300;400;600;700 -->
    <link rel="preconnect" href="https://fonts.googleapis.com" />
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,18 +14,12 @@
 </head>
 
 <body>
-   <header>
-      <picture class="hero__image">
-         <source srcset="./assets/hero.png?as=webp&width=1900" media="(max-width: 1900px)" type="image/webp" />
-         <source srcset="./assets/hero.png?as=webp&width=1800" media="(max-width: 1800px)" type="image/webp" />
-         <source srcset="./assets/hero.png?as=webp&width=800" media="(max-width: 800px)" type="image/webp" />
-         <img src="./assets/hero.png?as=webp" width="400" type="image/webp" />
-      </picture>
+   <header class="header">
       <nav class="navbar navbar-expand-lg navbar-light">
-         <div class="container">
+         <div class="container" id="navbar-container">
             <a class="navbar-brand"><img class="navbar__logo" src="./assets/rocket-color.png" alt="Rocket Logo" /></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
-               aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler custom-button" type="button" data-bs-toggle="collapse"
+               data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbar">
@@ -52,12 +46,10 @@
             </div>
          </div>
       </nav>
-   </header>
-   <main>
       <section class="hero">
          <div class="container">
-            <div class="hero__top-content">
-               <div class="hero__top-text">
+            <div class="hero__content">
+               <div class="hero__text">
                   <h1>I Professionisti del Debito</h1>
                   <h2>
                      assistiamo le aziende a risolvere le problematiche di debito
@@ -67,21 +59,21 @@
                      del debito ci pensiamo noi.
                   </p>
                </div>
+               <div class="hero__bottom">
+                  <p>Risparmia tempo e denaro</p>
+                  <a href="#" class="btn btn-secondary">PRENOTA LA TUA CONSULENZA</a>
+                  <p>con uno dei nostri esperti</p>
+               </div>
             </div>
-            <div class="hero__bottom-text">
-               <p>Risparmia tempo e denaro</p>
-               <a href="#" class="btn btn-secondary">PRENOTA LA TUA CONSULENZA</a>
-               <p>con uno dei nostri esperti</p>
-            </div>
-            <!-- <img src="./assets/hero.png?as=webp" alt=""> -->
-         </div>
       </section>
-      <section class="logos container">
+   </header>
+   <main>
+      <section class="logos">
          <div class="logos__container">
-            <img src="./assets/logos/economy-logo.svg" alt="Logo Economy" /><img
-               src="./assets/logos/milano-finanza-logo.svg" alt="Logo Milano Finanza" />
-            <img src="./assets/logos/sole-24-logo.svg" alt="Logo Il Sole 24 Ore" /><img
-               src="./assets/logos/forbes-logo.svg" alt="Logo Forbes" />
+            <img src="./assets/logos/economy-logo.png" alt="Logo Economy">
+            <img src="./assets/logos/mf-logo.png" alt="Logo Milano Finanza">
+            <img src="./assets/logos/sole-24-logo.png" alt="Logo Il Sole 24 Ore">
+            <img src="./assets/logos/forbes-logo.png" alt="Logo Forbes">
          </div>
       </section>
       <section class="tagline container">
@@ -352,7 +344,7 @@
                <p>Potrai scegliere il professionista che più si addice alle tue esigenze, per esperienza e know-how e
                   fine alla risoluzione del debito avrai un consulente a te dedicato.</p>
             </div>
-            <div class="functions__function">
+            <div class="functions__function functions__function_last">
                <h3>Un supporto mirato </h3>
                <img src="./assets/function-6.png" alt="">
                <p>I nostri consulenti sono i migliori in Italia nella risoluzione di questi problemi. Avrai una
@@ -383,7 +375,9 @@
          <button type="submit" class="btn btn-secondary">Prenota una chiamata con un consulente</button>
       </section>
       <section class="faq container">
-         <h2>FAQ</h2>
+         <div class="faq__title">
+            <h2>FAQ</h2>
+         </div>
          <div class="faq__content">
             <div class="faq__column">
                <h3>A chi mi posso rivolgere per risolvere i miei problemi finanziari?</h3>

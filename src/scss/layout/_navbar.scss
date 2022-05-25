@@ -1,5 +1,29 @@
 .navbar {
-  &__logo {
-    width: 18rem;
-  }
+   width: 100%;
+   position: absolute;
+   padding: 0;
+   @include respond(tab-port){
+      padding: 0;
+   }
+   @include respond(phone-land){
+      padding: 0;
+   }
+   &-nav{
+     li{
+        a{
+         @include respond(tab-land){
+            font-size: 1.4rem;
+         }
+        }
+     }
+   }
+   &__logo {
+      width: 18rem;
+   }
+}
+
+@media only screen and (max-width: 991px) {
+   .nav-item:last-of-type{
+      padding-bottom: 2rem;
+   }
 }

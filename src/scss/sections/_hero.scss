@@ -1,65 +1,108 @@
-$hero-top-size: 74vh;
-
 .hero {
-  height: $hero-top-size;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   
+   &__content {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding: 14% 3% 2% 3%;
+      @include respond(tab-land) {
+         padding: 14% 0 2% 0;
+      }
+      @include respond(tab-port){
+         padding: 14% 0 2% 0;
+      }
+      @include respond(phone-land){
+         padding: 16% 0 2% 3%;
+         width: 65%;
+      }
+      @include respond(phone-port) {
+         padding: 24% 0 2% 3%;
+         width: 85%;
+      }
+      @include respond(iphone-5) {
+         padding: 26% 0 2% 3%;
+      }
+   }
 
-  .container {
-    display: grid;
-    align-items: center;
-    height: 100%;
-    position: relative;
-  }
+   h1 {
+      font-size: 4.8rem;
+      font-weight: 600;
 
-  &__top-content {
-    width: 70%;
-    transform: translateY(calc(86px / 2 - 11rem));
-  }
+      @include respond(tab-land) {
+         font-size: 4.2rem;
+      }
 
-  &__image {
-    img {
+      @include respond(tab-port) {
+         font-size: 3.2rem;
+      }
+      @include respond(phone-land){
+         font-size: 2.6rem;
+      }
+      @include respond(phone-port) {
+         font-size: 2.4rem;
+         width: 85%;
+      }
+   }
+
+   h2 {
+      font-size: 2.4rem;
+      font-weight: 600;
+      text-align: left;
+      text-transform: none;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
       width: 100%;
-      height: calc($hero-top-size + 86px);
-      object-fit: cover;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-    }
-  }
 
-  h1 {
-    font-size: 4.8rem;
-    font-weight: 600;
-  }
+      @include respond(tab-land) {
+         font-size: 2rem;
+      }
 
-  h2 {
-    font-size: 2.4rem;
-    font-weight: 600;
-    text-align: left;
-    text-transform: none;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    width: 100%;
-  }
+      @include respond(tab-port) {
+         font-size: 1.4rem;
+      }
+      @include respond(phone-port) {
+         font-size: 1.4rem;
+         width: 80%;
+      }
 
-  &__intro {
-    width: 70%;
-    font-size: 2rem;
-    margin-bottom: 0;
-  }
+   }
 
-  &__bottom-text {
-    position: absolute;
-    bottom: 5rem;
+   &__intro {
+      font-size: 2rem;
+      margin-bottom: 0;
+      @include respond(tab-land) {
+         font-size: 1.8rem;
+      }
 
-    p {
-      margin: 0;
-      font-size: 1.4rem;
-      font-weight: 400;
-    }
+      @include respond(tab-port) {
+         font-size: 1.4rem;
+      }
+   }
 
-    .btn {
-      margin: 1rem 0;
-    }
-  }
+   
+   &__bottom{
+      margin-top: 8%;
+      .btn {
+         width: 45%;
+         @include respond(tab-land) {
+            width: 80%;
+         }
+         @include respond(tab-port) {
+            width: 60%;
+         }
+         @include respond(phone-land) {
+            width: 90%;
+            font-size: 1.4rem;
+         }
+         @include respond(phone-port) {
+            font-size: 1.4rem;
+            width: 75%;
+         }
+      }
+   }
+
 }
