@@ -13,9 +13,9 @@ const setDefault = () => {
 // Changing BG color when nav is open
 const changeNavBG = () => {
    navState = navButton.getAttribute('aria-expanded');
-   if(navState == 'true'){
+   if (navState == 'true') {
       navbar.style.backgroundColor = "#ffffff"
-   } else if(navState == 'false'){
+   } else if (navState == 'false') {
       navbar.style.backgroundColor = "#ffffff80"
    }
 }
