@@ -8,7 +8,6 @@ navbar.style.transition = "all 0.2s";
 const setDefault = () => {
    navState = navButton.getAttribute('aria-expanded');
    navButton.setAttribute('aria-expanded', false)
-   
 }
 
 // Changing BG color when nav is open
@@ -23,4 +22,4 @@ const changeNavBG = () => {
 
 navButton.addEventListener("click", changeNavBG)
 
-document.onload(setDefault)
+// document.addEventListener("DOMContentLoaded", setDefault)

@@ -81,15 +81,11 @@
       @include respond(tab-port) {
          font-size: 1.4rem;
       }
-      @include respond(phone-port) {
-         font-weight: 400;
-      }
    }
 
    
    &__bottom{
       margin-top: 8%;
-      font-weight: 400;
       .btn {
          width: 45%;
          @include respond(tab-land) {
