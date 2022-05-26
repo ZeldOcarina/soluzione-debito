@@ -3,12 +3,11 @@
    background-color: var(--color-primary);
    border-radius: 20px;
    padding: 5rem 7rem;
-
+   @include respond(tab-port) {
+      margin-top: 8rem;
+   }
    @include respond(phone-port) {
       padding: 3rem 4rem;
-   }
-   @include respond(iphone-5) {
-      margin-top: 8rem;
    }
 
    h3 {

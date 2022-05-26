@@ -2,8 +2,8 @@
    padding: 0 6%;
    .benefit{
       h3{
-         margin-top: 10rem;
-         @include respond(iphone-5) {
+         margin-top: 12rem;
+         @include respond(tab-port) {
             margin-top: 6rem;
          }
       }

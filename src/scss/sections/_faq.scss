@@ -18,9 +18,15 @@
       margin-top: 6rem;
       display: flex;
       justify-content: space-between;
+      @include respond(phone-port){
+         flex-direction: column;
+      }
    }
    &__column{
       width: 49%;
+      @include respond(phone-port){
+         width: 95%;
+      }
       h3{
          text-align: left;
          font-weight: 600;

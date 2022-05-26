@@ -1,10 +1,13 @@
 .logos {
+   display: flex;
+   align-items: center;
    height: 15vh;
    &__container {
       width: 100%;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: space-around;
+      align-items: center;
       img{
          padding: 1%;
          width: 20%;

@@ -27,14 +27,15 @@
       }
       &_last{
          border: none;
+         padding: 0;
       }
    }
    &__item{
       width: 48%;
    }
    &__step{
-      margin-top: 13rem;
-      @include respond(iphone-5) {
+      margin-top: 12rem;
+      @include respond(tab-port) {
          margin-top: 8rem;
       }
       p{
