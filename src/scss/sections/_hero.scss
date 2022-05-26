@@ -1,30 +1,57 @@
 .hero {
+   height: 100%;
    display: flex;
    flex-direction: column;
    justify-content: center;
+   @include respond(phone-port){
+      justify-content: flex-end;
+   }
+   .container{
+      height: 100%;
+      display: flex;
+      align-items: center;
+      @include respond(tab-port){
+         height: 70%;
+      }
+      @include respond(phone-land){
+         height: 100%;
+         align-items: flex-end;
+         margin: 0;
+      }
+      @include respond(phone-port){
+         height: 100%;
+         align-items: flex-end;
+      }
+   }
    
    &__content {
+      height: 80%;
       width: 70%;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
+      margin: auto 0;
       padding: 14% 3% 2% 3%;
       @include respond(tab-land) {
-         padding: 14% 0 2% 0;
-      }
-      @include respond(tab-port){
-         padding: 14% 0 2% 0;
-      }
-      @include respond(phone-land){
-         padding: 16% 0 2% 3%;
-         width: 65%;
-      }
-      @include respond(phone-port) {
-         padding: 24% 0 2% 3%;
          width: 85%;
       }
+      @include respond(tab-port){
+         width: 85%;
+      }
+      @include respond(phone-land){
+         margin: 0;
+         width: 80%;
+         height: 65%;
+      }
+      @include respond(phone-port) {
+         padding: 0 3%;
+         height: 50%;
+         width: 100%;
+         position: absolute;
+         bottom: 18%;
+      }
       @include respond(iphone-5) {
-         padding: 26% 0 2% 3%;
+         padding: 0 2%;
       }
    }
 
@@ -37,14 +64,17 @@
       }
 
       @include respond(tab-port) {
-         font-size: 3.2rem;
+         font-size: 3.6rem;
       }
       @include respond(phone-land){
-         font-size: 2.6rem;
+         font-size: 3rem;
       }
       @include respond(phone-port) {
-         font-size: 2.4rem;
-         width: 85%;
+         font-size: 4rem;
+         width: 100%;
+      }
+      @include respond(iphone-5) {
+         font-size: 3.4rem;
       }
    }
 
@@ -62,11 +92,13 @@
       }
 
       @include respond(tab-port) {
-         font-size: 1.4rem;
+         font-size: 1.8rem;
       }
       @include respond(phone-port) {
-         font-size: 1.4rem;
-         width: 80%;
+         font-size: 2.4rem;
+      }
+      @include respond(iphone-5) {
+         font-size: 2.2rem;
       }
 
    }
@@ -75,32 +107,58 @@
       font-size: 2rem;
       margin-bottom: 0;
       @include respond(tab-land) {
-         font-size: 1.8rem;
+         font-size: 2rem;
       }
 
       @include respond(tab-port) {
-         font-size: 1.4rem;
+         font-size: 1.8rem;
       }
+      @include respond(phone-port) {
+         display: none;
+      }
+
    }
 
    
    &__bottom{
       margin-top: 8%;
+      @include respond(phone-port) {
+         margin: 0;
+      }
+      p{
+         @include respond(tab-port) {
+            font-size: 2rem;
+         }
+         @include respond(phone-land) {
+            font-size: 2rem;
+         }
+         @include respond(phone-port) {
+            font-size: 1.8rem;
+            font-weight: 300;
+         }
+      }
       .btn {
          width: 45%;
          @include respond(tab-land) {
-            width: 80%;
+            width: 60%;
          }
          @include respond(tab-port) {
             width: 60%;
          }
          @include respond(phone-land) {
-            width: 90%;
+            width: 80%;
             font-size: 1.4rem;
          }
          @include respond(phone-port) {
             font-size: 1.4rem;
-            width: 75%;
+            font-weight: 400;
+            padding-left: 3%;
+            padding-right: 3%;
+         }
+         @include respond(iphone-5) {
+            font-size: 1.4rem;
+            padding-left: 3%;
+            padding-right: 3%;
          }
       }
    }

@@ -6,7 +6,6 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <title>Soluzione Debito</title>
-   <!-- Google Fonts Link: https://fonts.google.com/share?selection.family=Open%20Sans:wght@300;400;600;700 -->
    <link rel="preconnect" href="https://fonts.googleapis.com" />
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
@@ -25,22 +24,22 @@
             <div class="collapse navbar-collapse" id="navbar">
                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                     <a class="nav-link" href="#">Casi Studio</a>
+                     <a class="nav-link" href="#testimonals">Casi Studio</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="#">Step</a>
+                     <a class="nav-link" href="#steps">Step</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="#">Vantaggi</a>
+                     <a class="nav-link" href="#benefits">Vantaggi</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="#">Funzioni</a>
+                     <a class="nav-link" href="#functions">Funzioni</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="#">Faq</a>
+                     <a class="nav-link" href="#faq">Faq</a>
                   </li>
                   <li class="nav-item">
-                     <a class="btn btn-secondary" href="#">CONTATTACI</a>
+                     <a class="btn btn-secondary" href="#contact">CONTATTACI</a>
                   </li>
                </ul>
             </div>
@@ -69,7 +68,7 @@
    </header>
    <main>
       <section class="logos">
-         <div class="logos__container">
+         <div class="logos__container container">
             <img src="./assets/logos/economy-logo.png" alt="Logo Economy">
             <img src="./assets/logos/mf-logo.png" alt="Logo Milano Finanza">
             <img src="./assets/logos/sole-24-logo.png" alt="Logo Il Sole 24 Ore">
@@ -82,7 +81,7 @@
             tempestiva ristrutturazione del debito.
          </h2>
       </section>
-      <section class="testimonials container">
+      <section class="testimonials container" id="testimonals">
          <h2>Casi Studio</h2>
          <div class="testimonials__container">
             <article class="testimonials__case-study-card">
@@ -170,7 +169,7 @@
                un paese, per aiutarli a risanare la propria posizione. </p>
          </article>
       </section>
-      <section class="steps container">
+      <section class="steps container" id="steps">
          <article class="steps__step">
             <h3>Step 1</h3>
             <h2>Richiedi nuova finanza per far espandere finalmente la tua attività</h2>
@@ -271,7 +270,7 @@
             </div>
          </article>
       </section>
-      <section class="benefits container">
+      <section class="benefits container" id="benefits">
          <aticle class="benefit">
             <h3>Vantaggio 1</h3>
             <h2>Struttura la tua azienda o attività per renderla stabile nel tempo</h2>
@@ -303,7 +302,7 @@
                business plan, saprai esattamente come strutturare e gestire al meglio la tua azienda.</p>
          </aticle>
       </section>
-      <section class="functions container">
+      <section class="functions container" id="functions">
          <h2>Funzioni</h2>
          <div class="functions__row">
             <div class="functions__function">
@@ -355,26 +354,26 @@
             <a href="#" class="btn btn-secondary">ENTRA IN AZIONE ORA!</a>
          </div>
       </section>
-      <section class="contact container">
+      <section class="contact container" id="contact">
          <h3>Scopri i nostri servizi!</h3>
          <p>Compila il modulo inserendo i tuoi dati per venire contattato da uno dei nostri professionisti.</p>
-         <form action="POST" class="contact__form">
+         <form action="f/1610-7032" method="POST" class="contact__form" data-class="Form" data-redirect-to-page="7033" data-action-type="page_link">
             <div class="contact__form-left">
                <input type="text" name="name" id="name" placeholder="Name"
-                  class="contact__form-left__input contact__form-left__input_name">
-               <input type="email" name="email" id="email" placeholder="Email" class="contact__form-left__input">
+                  class="contact__form-left__input contact__form-left__input_name" required>
+               <input type="email" name="email" id="email" placeholder="Email" class="contact__form-left__input" required>
                <input type="number" name="number" id="number" placeholder="Phone number"
-                  class="contact__form-left__input">
+                  class="contact__form-left__input" required>
             </div>
             <div class="contact__form-right">
-               <textarea name="message" id="message" placeholder="Message"></textarea>
+               <textarea name="d93d8b3e-42dc-ec11-a9ab-ff1d79b08822" id="message" placeholder="Message" required></textarea>
                <button type="submit" class="btn btn-secondary">Richiedi maggiori informazioni</button>
             </div>
          </form>
          <p>Se desideri puoi schedulare direttamente una chiamata con uno dei nostri consulenti!</p>
-         <button type="submit" class="btn btn-secondary">Prenota una chiamata con un consulente</button>
+         <a href="#" class="btn btn-secondary">Prenota una chiamata con un consulente</a>
       </section>
-      <section class="faq container">
+      <section class="faq container" id="faq">
          <div class="faq__title">
             <h2>FAQ</h2>
          </div>

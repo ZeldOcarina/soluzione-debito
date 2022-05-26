@@ -1,15 +1,19 @@
 .header{
+   height: 85vh;
    display: flex;
    flex-direction: column;
    background-image: url('../assets/hero.png');
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
+   @include respond(tab-port){
+      background-position: 60% 0;
+   }
    @include respond(phone-land){
-      background-position: 65% 0;
+      background-position: 75% 0;
    }
    @include respond(phone-port){
       background-image: url('../assets/hero-mob.png');
-      background-position: 100% 25%;
+      background-position: 25% 0;
    }
 }
