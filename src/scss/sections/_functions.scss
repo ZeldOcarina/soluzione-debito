@@ -22,7 +22,7 @@
    &__function{
       width: 49%;
       @include respond(phone-port) {
-         width: 80%;
+         width: 100%;
          margin: 0 auto;
          margin-top: 1.5rem;
          padding-bottom: 1.5rem;
