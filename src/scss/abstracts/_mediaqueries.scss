@@ -19,6 +19,12 @@ ORDER: Base + typography > General layout + grid > page layout > components
     } // 350px
   }
 
+  @if $breakpoint == iphone-12 {
+   @media only screen and (max-width: 24.375em) {
+     @content;
+   } // 390px
+ }
+
   @if $breakpoint == phone-port {
     @media only screen and (max-width: 37.5em) {
       @content;
@@ -42,6 +48,12 @@ ORDER: Base + typography > General layout + grid > page layout > components
       @content;
     } // 1200px
   }
+
+  @if $breakpoint == macbook-air {
+   @media only screen and (max-width: 90em) {
+     @content;
+   } // 1440px
+ }
 
   @if $breakpoint == laptop {
     @media only screen and (max-width: 102.18em) {
