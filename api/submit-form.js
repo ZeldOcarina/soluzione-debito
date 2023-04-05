@@ -1,6 +1,7 @@
 import axios from "axios";
 
 export default async function handler(request, response) {
+    console.log(request);
     const res = await axios.post("https://sj-api.com/externalapp/track", request.body, {
         headers: {
             "Content-Type": "application/json",
