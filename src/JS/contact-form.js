@@ -31,7 +31,7 @@ form.addEventListener('submit', async (e) => {
     try {
         const response = await axios.post("/api/submit-form", salesJetPayload);
         console.log(response.data);
-        window.location.assign("https://i-professionisti-del-debito.salesjet.io/gc0bpq");
+        location.assign("https://i-professionisti-del-debito.salesjet.io/thank-you");
     } catch (error) {
         console.error(error);
         submitBtn.disabled = false;
