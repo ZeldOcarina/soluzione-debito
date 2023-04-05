@@ -1,6 +1,7 @@
+import type { VercelRequest,  VercelResponse } from '@vercel/node';
 import axios from "axios";
 
-export default async function handler(request, response) {
+export default async function handler(request: VercelRequest, response: VercelResponse) {
     console.log(request);
     const res = await axios.post("https://sj-api.com/externalapp/track", request.body, {
         headers: {
